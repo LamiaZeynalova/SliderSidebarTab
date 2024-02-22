@@ -2,5 +2,347 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+   
+    
 }
+
+#header{ 
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: transparent;
+    z-index: 99;
+    
+   
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+ul{
+   list-style: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+    text-decoration: none;
+    padding-right: 48px;
+    
+}
+
+nav .navend{
+    border-bottom: 4px solid #fee4bb;
+    color: white;
+    font-weight: 800;
+    font-size: 25px;
+   
+}
+.menulink{
+    display: flex;
+    justify-content: space-between; 
+    color: white;
+
+}
+#header.sticky {
+    background-color: hwb(28 1% 85%);
+    transition: 0,3s;
+}
+
+
+.burger {
+    
+    padding: 13px 13px;
+    display: none;
+    background-color: #4c4c4c;
+    color: black;
+}
+.burger_menu {
+    width: max-content;
+    background-color: rgb(56, 55, 55);
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+}
+#burgermenu i {
+    margin-left: 4px;}
+    header .navBar {
+        display: block;
+    }
+ .menulink {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    opacity: 1;
+    }
+    
+ .menulink li a {
+    display: block;
+    font-size: 20px;
+    margin: 0 4px;
+    padding: 14px 23px;
+    transition: 0.5s;
+    }
+    
+    .menulink li i {
+        font-size: 10px;
+        margin-left: 10px;
+    }
+    
+    .submenu {
+        display: none;
+        width: 180px;
+        border: 1px solid grey;
+        border-radius: 10px;
+        padding: 8px 5px;
+        flex-direction: column;
+        position: absolute;
+        top: 72px;
+        background-color: white
+    }
+    .menulink li:hover .submenu{
+    display: block;}
+
+    
+    .slider-container {
+        width: 100%;
+        overflow: hidden;
+      }
+      .slide {
+        min-width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .slide_text h3 {
+        font-family: "Philosopher", sans-serif;
+        font-size: 60px;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        font-weight: 600;
+        line-height: 70px;
+        color:white;
+      }
+    .slide_text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 60%;
+        gap: 25px;
+      }
+      .slide_text .textButton{
+        background: #DB9A64;
+        color:white;
+        padding: 19px 50px;
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        cursor: pointer;
+      }
+      .slide_text .textButton:hover {
+        background-color: #012649;
+      }
+
+      .prev {
+        left: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 12px;
+        background-color: grey;
+        cursor: pointer;
+      }
+      
+      .next {
+        right: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 12px;
+        background-color: grey;
+        cursor: pointer;
+      }
+
+      #delicious_area h2{
+        font-size: 50px;
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 50px;
+        text-align: center;
+        
+       
+    }
+    #delicious_area{
+        margin-top:50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        border-bottom: 1px solid #6c757d;
+    
+    }
+    .tablistmenu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        margin-bottom: 30px;
+    }
+     .tablistmenu i{
+        color: #596672;
+        font-size: 50px;
+        margin-bottom: 10px;
+      }
+    
+    .tabs{
+        position: relative;
+        width: 70vw;
+    }
+    .tabs .cards{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 30px;
+        row-gap: 70px;
+        column-gap: 40px;
+        position: absolute;
+    }
+    .tabs #tab2{
+        display: none;
+    }
+    .tabs #tab3{
+        display: none;
+    }
+     .cards .card h3 {
+        font-size: 28px;
+        font-weight: 600;
+     }
+     .cards .card h4 {
+        font-size: 28px;
+        font-weight: 600;
+        color: #dc975f;
+     }
+     .cards .card p {
+        font-size: 17px;
+        font-weight: 600;
+        margin: 23px 0;
+        color: #595959;
+     }
+
+     @media only screen and (max-width: 992px) {
+        header {
+            display: flex;
+            flex-direction: column;
+            height: 64px;
+        }
+        header nav {
+            width: 100%;
+        }
+        header .logo {
+            display: flex;
+            justify-content: start;
+        }
+        header .logo img {
+            width: 121px;
+        }
+        header .navend {
+            display: none;
+        }
+        header .burger {
+            width: 100%;
+            display: flex;
+            justify-content: end;
+            background-color: #4c4c4c;
+        }
+        header .menulink{
+            display: none;
+            flex-direction: column;
+          }
+        .nav_menu ul {
+            padding: 30px 0 20px 0;
+            display: none;
+            transition: 2s;
+          }
+
+          .nav_menu ul li {
+            display: block;
+            margin-bottom: 10px;
+            margin-left: 20px;
+          }
+          .burger_menu {
+            background-color: #333333;
+            width: max-content;
+            height: max-content;
+            color: #fff;
+            padding: 4px 15px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 18px;
+          }
+
+        .submenu li:hover .tabUl {
+            display: flex;
+        }
+     
+        .slider-container .slide {
+            height: 50vh;
+        }
+    
+        .slide_text {
+            width: 80%; 
+        }
+    
+        .slide_text h3 {
+            font-size: 40px; 
+            line-height: 50px; 
+        }
+    
+        .slide_text .textButton {
+            padding: 10px 30px;
+        }
+    
+        #delicious_area {
+            flex-direction: column;
+            gap: 20px; 
+        }
+    
+        .tablistmenu {
+            gap: 20px; 
+        }
+    
+        .tabs .cards {
+            flex-direction: column; 
+            margin: 20px 0;
+        }
+    
+        .cards .card {
+            width: 100%;
+            margin-bottom: 20px; 
+        }
+    
+        .cards .card img {
+            width: 100%;
+            max-width: 300px; 
+        }
+    }
+      
+      
+    
+
